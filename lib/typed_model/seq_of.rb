@@ -1,4 +1,4 @@
-module SimpleSchema
+module TypedModel
   class SeqOf
     attr_reader :spec
 

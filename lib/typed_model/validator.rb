@@ -1,6 +1,6 @@
-require 'simple_schema/validators'
+require 'typed_model/validators'
 
-module SimpleSchema
+module TypedModel
   class Validator
     class << self
       def build(arg)

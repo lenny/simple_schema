@@ -1,4 +1,4 @@
-module SimpleSchema
+module TypedModel
   class MapOf
     attr_reader :key_spec, :value_spec
 

@@ -1,8 +1,8 @@
-require 'simple_schema/types'
-require 'simple_schema/validators'
-require 'simple_schema/type_def'
+require 'typed_model/types'
+require 'typed_model/validators'
+require 'typed_model/type_def'
 
-module SimpleSchema
+module TypedModel
   class AttributeDefinition
     attr_reader :name, :spec, :model_validations, :mapping_key
 

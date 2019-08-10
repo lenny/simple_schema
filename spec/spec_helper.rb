@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "simple_schema"
+require "typed_model"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

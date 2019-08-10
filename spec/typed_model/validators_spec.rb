@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'simple_schema/validators'
+require 'typed_model/validators'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe Validators do
     describe '.assert_required' do
       it 'returns nil for non-empty value' do

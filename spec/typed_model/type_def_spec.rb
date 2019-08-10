@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'simple_schema/type_def'
+require 'typed_model/type_def'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe TypeDef do
     describe '.build' do
       specify 'scalar value is accepted as short for {type: t}' do

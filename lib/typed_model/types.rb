@@ -1,4 +1,4 @@
-module SimpleSchema
+module TypedModel
 
   # Supported Types/Type coercion
   #

@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-require 'simple_schema/model_validations'
+require 'typed_model/model_validations'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe ModelValidations do
     let(:klass) do
       Class.new do

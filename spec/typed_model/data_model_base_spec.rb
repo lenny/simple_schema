@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'simple_schema/data_model_base'
+require 'typed_model/data_model_base'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe DataModelBase do
     let(:klass) do
       Class.new do

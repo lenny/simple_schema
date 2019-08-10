@@ -1,4 +1,4 @@
-module SimpleSchema
+module TypedModel
   class Errors
     def initialize
       @errors = Hash.new do |h, k|

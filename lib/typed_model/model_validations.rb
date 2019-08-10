@@ -1,8 +1,8 @@
 require 'time'
 require 'set'
-require 'simple_schema/errors'
+require 'typed_model/errors'
 
-module SimpleSchema
+module TypedModel
 
   # Supplies a simple Errors facility with common validations
   #

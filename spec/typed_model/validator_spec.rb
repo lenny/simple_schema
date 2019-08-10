@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-require 'simple_schema/validator'
+require 'typed_model/validator'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe Validator do
     describe 'initializer' do
       it 'return value of specified block is returned from #validation' do

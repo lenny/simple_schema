@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "simple_schema/version"
+require "typed_model/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "simple_schema"
-  spec.version       = SimpleSchema::VERSION
+  spec.name          = "typed_model"
+  spec.version       = TypedModel::VERSION
   spec.authors       = ["Lenny Marks"]
   spec.email         = ["lenny@lennymarks.com"]
 
   spec.summary       = 'A Ruby library for defining data schemas via classes with typed fields and built in hydration and serialization'
   spec.description   = 'A Ruby library for defining data schemas via classes with typed fields and built in hydration and serialization'
-  spec.homepage      = 'https://github.com/lenny/simple_schema'
+  spec.homepage      = 'https://github.com/lenny/typed_model'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = 'https://github.com/lenny/simple_schema'
-    spec.metadata["changelog_uri"] = "https://github.com/lenny/simple_schema/blob/master/CHANGELOG.md"
+    spec.metadata["source_code_uri"] = 'https://github.com/lenny/typed_model'
+    spec.metadata["changelog_uri"] = "https://github.com/lenny/typed_model/blob/master/CHANGELOG.md"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."

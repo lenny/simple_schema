@@ -1,7 +1,7 @@
-require 'simple_schema/model_validations'
-require 'simple_schema/attribute_definition'
+require 'typed_model/model_validations'
+require 'typed_model/attribute_definition'
 
-module SimpleSchema
+module TypedModel
 
   # Introduce a DataModelBase class for declaring structure
   # - data mapping (data -> object -> data)

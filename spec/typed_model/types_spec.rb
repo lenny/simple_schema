@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'simple_schema/types'
+require 'typed_model/types'
 require 'time'
 
-module SimpleSchema
+module TypedModel
   RSpec.describe Types do
     describe '.timestamp' do
       it 'returns nil given nil' do

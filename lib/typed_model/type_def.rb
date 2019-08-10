@@ -1,9 +1,9 @@
-require 'simple_schema/seq_of'
-require 'simple_schema/map_of'
-require 'simple_schema/types'
-require 'simple_schema/validator'
+require 'typed_model/seq_of'
+require 'typed_model/map_of'
+require 'typed_model/types'
+require 'typed_model/validator'
 
-module SimpleSchema
+module TypedModel
   class TypeDef
     class << self
       def build(args)

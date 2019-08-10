@@ -1,6 +1,6 @@
-require 'simple_schema/types'
+require 'typed_model/types'
 
-module SimpleSchema
+module TypedModel
   module Validators
     module_function
 
