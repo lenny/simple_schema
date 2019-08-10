@@ -1,18 +1,18 @@
 require 'spec_helper'
-require 'typed_model/data_model_base'
+require 'typed_model/model_base'
 
 module TypedModel
-  RSpec.describe DataModelBase do
+  RSpec.describe ModelBase do
     let(:klass) do
       Class.new do
-        include DataModelBase
+        include ModelBase
       end
     end
 
     describe 'data conversion' do
       let(:address_class) do
         Class.new do
-          include DataModelBase
+          include ModelBase
           attribute :state
           attribute :zip
         end
@@ -21,7 +21,7 @@ module TypedModel
       let(:employee_class) do
         a_c = address_class
         Class.new do
-          include DataModelBase
+          include ModelBase
 
           attribute :a_boolean, type: :boolean
           attribute :an_integer, type: :integer
@@ -89,7 +89,7 @@ module TypedModel
 
     specify 'declared attributes are inherited' do
       c1 = Class.new do
-        include DataModelBase
+        include ModelBase
         attribute :foo
       end
       c2 = Class.new(c1) do
@@ -105,7 +105,7 @@ module TypedModel
 
     specify 'subclass definitions overwrite superclass ones' do
       c1 = Class.new do
-        include DataModelBase
+        include ModelBase
         attribute :foo, type: :boolean
       end
       c2 = Class.new(c1) do
@@ -117,7 +117,7 @@ module TypedModel
     describe 'validations' do
       let(:address_class) do
         Class.new do
-          include DataModelBase
+          include ModelBase
           attribute :street, validations: [:required]
         end
       end
@@ -125,7 +125,7 @@ module TypedModel
       let(:employee_class) do
         a_c = address_class
         Class.new do
-          include DataModelBase
+          include ModelBase
           attribute :name, type: :string, validations: [:required]
           attribute :primary_address, type: a_c, validations: [:required]
           attribute :alternate_addresses, seq_of: a_c
@@ -240,7 +240,7 @@ module TypedModel
     describe 'type: :seq' do
       let(:widget_class) do
         Class.new do
-          include DataModelBase
+          include ModelBase
           attribute :name, type: :string, validations: [:required]
         end
       end
@@ -273,7 +273,7 @@ module TypedModel
     describe 'type: :map' do
       let(:widget_class) do
         Class.new do
-          include DataModelBase
+          include ModelBase
           attribute :name, type: :string, validations: [:required]
         end
       end

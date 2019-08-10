@@ -27,7 +27,7 @@ Or install it yourself as:
 ## Usage
 
     Employee
-      include DataModelBase
+      include ModelBase
 
       attribute :a_boolean, type: :boolean
       attribute :an_integer, type: :integer

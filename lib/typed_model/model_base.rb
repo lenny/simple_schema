@@ -3,7 +3,7 @@ require 'typed_model/attribute_definition'
 
 module TypedModel
 
-  # Introduce a DataModelBase class for declaring structure
+  # Introduce a ModelBase class for declaring structure
   # - data mapping (data -> object -> data)
   # - declared types
   # - declared validations
@@ -11,17 +11,17 @@ module TypedModel
   #
   # e.g.
   # class Address
-  #   include DataModelBase
+  #   include ModelBase
   #   attribute :street, type: string, validations: [:required]
   # end
   #
   # class Employee
-  #   include DataModelBase
+  #   include ModelBase
   #   attribute :name, type: :string, validations: [:required]
   #   attribute :primary_address, type: Address, validations: [:required]
   #   attribute :alternate_addresses, seq_of: Address
   # end
-  module DataModelBase
+  module ModelBase
     def self.included(base)
       super
       base.class_eval do
